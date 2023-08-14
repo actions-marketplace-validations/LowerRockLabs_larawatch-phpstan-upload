@@ -1,19 +1,9 @@
 name: 'Upload PHPStan to LaraWatch'
 description: 'Upload PHPStan results to LaraWatch'
 inputs:
-  host:
-    description: 'Host of the HTTP server (e.g. example.com)'
-    required: true
-  path:
-    description: 'Path of the URL to send the file (e.g. /postFile)'
-    required: true
   filePath:
     description: 'Full path of the local file you want to upload (e.g. /home/user/file.zip)'
     required: true
-  https:
-    description: 'Whether the request must go on HTTPS. Default false'
-    default: 'true'
-    required: false
   data:
     description: 'Additional data you should want to send within the request (e.g. "{\"foo\":\"bar\"}")'
     required: false
@@ -21,7 +11,7 @@ outputs:
   response:
     description: 'The response from the server'
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'index.js'
 branding:
   icon: box
