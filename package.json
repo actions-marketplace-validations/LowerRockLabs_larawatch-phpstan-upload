@@ -1,0 +1,31 @@
+{
+  "name": "larawatch-phpstan-upload",
+  "version": "1.1.0",
+  "description": "GitHub action to upload PHPStan files to Larawatch",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LowerRockLabs/larawatch-phpstan-upload.git"
+  },
+  "keywords": [
+    "github",
+    "actions",
+    "upload",
+    "http",
+    "post",
+    "nodejs"
+  ],
+  "author": "Larawatch Team <team@larawatch.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LowerRockLabs/larawatch-phpstan-upload/issues"
+  },
+  "homepage": "https://github.com/LowerRockLabs/larawatch-phpstan-upload#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "form-data": "^3.0.0"
+  }
+}
