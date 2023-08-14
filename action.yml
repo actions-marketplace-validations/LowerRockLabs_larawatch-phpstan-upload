@@ -1,5 +1,5 @@
-name: 'Upload file via HTTP'
-description: 'Upload a file to an HTTP server'
+name: 'Upload PHPStan to LaraWatch'
+description: 'Upload PHPStan results to LaraWatch'
 inputs:
   host:
     description: 'Host of the HTTP server (e.g. example.com)'
@@ -12,7 +12,7 @@ inputs:
     required: true
   https:
     description: 'Whether the request must go on HTTPS. Default false'
-    default: 'false'
+    default: 'true'
     required: false
   data:
     description: 'Additional data you should want to send within the request (e.g. "{\"foo\":\"bar\"}")'
